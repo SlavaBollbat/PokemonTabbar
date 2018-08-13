@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Pokemon__with_tabbar_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aby-JH-4lJ">
+                                <rect key="frame" x="67" y="370" width="240" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="dLL-aM-0aJ"/>
+                                    <constraint firstAttribute="height" constant="195" id="e5Z-g6-ydU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR1-Qw-lkX">
+                                <rect key="frame" x="72" y="588" width="240" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="7k5-2K-cUE"/>
+                                    <constraint firstAttribute="height" constant="45" id="QeE-ZL-rHb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6V-nc-2kY">
+                                <rect key="frame" x="62" y="274" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="1at-CI-40W"/>
+                                </constraints>
+                                <state key="normal" title="Choose pokemon"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7Z-Bk-j1j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aby-JH-4lJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0rr-r6-LO1"/>
+                            <constraint firstItem="XR1-Qw-lkX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="4.5" id="23g-D4-oSS"/>
+                            <constraint firstItem="XR1-Qw-lkX" firstAttribute="top" secondItem="aby-JH-4lJ" secondAttribute="bottom" constant="23" id="JPI-g6-VyD"/>
+                            <constraint firstItem="aby-JH-4lJ" firstAttribute="top" secondItem="S6V-nc-2kY" secondAttribute="bottom" constant="66" id="Rle-pT-xt3"/>
+                            <constraint firstItem="S6V-nc-2kY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-44.5" id="WzM-hH-7VJ"/>
+                            <constraint firstItem="S6V-nc-2kY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vzZ-rr-699"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myImage" destination="aby-JH-4lJ" id="qSb-jI-Pmo"/>
+                        <outlet property="myLabel" destination="XR1-Qw-lkX" id="1FU-eQ-To2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="80"/>
+        </scene>
+        <!--Pikachu-->
+        <scene sceneID="cfK-S3-w9y">
+            <objects>
+                <viewController storyboardIdentifier="Pikachu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fx0-uJ-bnV" customClass="PikachuViewController" customModule="Pokemon__with_tabbar_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vVd-FI-dnT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pikachu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyR-bc-8ph">
+                                <rect key="frame" x="67" y="73" width="240" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="ij6-Lw-pCl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="lae-I7-90g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="UH7-xU-WWV">
+                                <rect key="frame" x="16" y="178" width="343" height="400"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RyR-bc-8ph" firstAttribute="centerX" secondItem="WZl-fE-fn1" secondAttribute="centerX" id="AUY-zh-CMK"/>
+                            <constraint firstItem="WZl-fE-fn1" firstAttribute="trailing" secondItem="UH7-xU-WWV" secondAttribute="trailing" constant="16" id="ClC-rG-dyO"/>
+                            <constraint firstItem="UH7-xU-WWV" firstAttribute="leading" secondItem="WZl-fE-fn1" secondAttribute="leading" constant="16" id="VQa-MK-jnN"/>
+                            <constraint firstItem="UH7-xU-WWV" firstAttribute="top" secondItem="RyR-bc-8ph" secondAttribute="bottom" constant="72" id="Yy2-EL-5Dk"/>
+                            <constraint firstItem="WZl-fE-fn1" firstAttribute="bottom" secondItem="UH7-xU-WWV" secondAttribute="bottom" constant="40" id="dZd-BQ-SJS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WZl-fE-fn1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pikachu" id="w1b-Am-UcE"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myImage" destination="UH7-xU-WWV" id="DKd-A3-fEP"/>
+                        <outlet property="myLabel" destination="RyR-bc-8ph" id="SNO-wb-dqT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ApQ-rG-atf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="-470"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="Qk5-HU-Wxg">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WWd-DH-oau" customClass="TabBarViewController" customModule="Pokemon__with_tabbar_" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zvP-gP-Ywr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fx0-uJ-bnV" kind="relationship" relationship="viewControllers" id="IUO-Gv-jQ6"/>
+                        <segue destination="0bB-B0-gr5" kind="relationship" relationship="viewControllers" id="f1o-di-c4O"/>
+                        <segue destination="DdF-ci-zK9" kind="relationship" relationship="viewControllers" id="kkc-Z6-FAA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LX1-4y-Lcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="80"/>
+        </scene>
+        <!--Bulbasaur-->
+        <scene sceneID="c5I-uC-if4">
+            <objects>
+                <viewController storyboardIdentifier="Bulbasaur" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0bB-B0-gr5" customClass="BulbasaurViewController" customModule="Pokemon__with_tabbar_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QLx-RG-NmA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulbasaur" translatesAutoresizingMaskIntoConstraints="NO" id="ery-EP-ZGG">
+                                <rect key="frame" x="16" y="183" width="343" height="395"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bulbasaur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVK-zj-NEF">
+                                <rect key="frame" x="67" y="73" width="240" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="5Jf-jL-SpS"/>
+                                    <constraint firstAttribute="height" constant="33" id="i1g-sg-qo4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kVK-zj-NEF" firstAttribute="top" secondItem="IwW-Ux-KdO" secondAttribute="top" constant="53" id="bc5-YK-anS"/>
+                            <constraint firstItem="ery-EP-ZGG" firstAttribute="leading" secondItem="IwW-Ux-KdO" secondAttribute="leading" constant="16" id="gOq-8y-fY3"/>
+                            <constraint firstItem="IwW-Ux-KdO" firstAttribute="trailing" secondItem="ery-EP-ZGG" secondAttribute="trailing" constant="16" id="jLs-Cj-2jI"/>
+                            <constraint firstItem="kVK-zj-NEF" firstAttribute="centerX" secondItem="IwW-Ux-KdO" secondAttribute="centerX" id="jkj-6F-XrK"/>
+                            <constraint firstItem="ery-EP-ZGG" firstAttribute="top" secondItem="kVK-zj-NEF" secondAttribute="bottom" constant="77" id="pTF-QO-xpQ"/>
+                            <constraint firstItem="IwW-Ux-KdO" firstAttribute="bottom" secondItem="ery-EP-ZGG" secondAttribute="bottom" constant="40" id="t9i-Hc-e0o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IwW-Ux-KdO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bulbasaur" id="Qyw-oD-Mmj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myImage" destination="ery-EP-ZGG" id="3OD-de-fHz"/>
+                        <outlet property="myLabel" destination="kVK-zj-NEF" id="Fpv-hI-oXB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mew-eW-eem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2375.1999999999998" y="63.418290854572717"/>
+        </scene>
+        <!--MewTwo-->
+        <scene sceneID="dix-wR-bZd">
+            <objects>
+                <viewController storyboardIdentifier="MewTwo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DdF-ci-zK9" customClass="MewTwoViewController" customModule="Pokemon__with_tabbar_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ShD-ra-LzK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mewtwo" translatesAutoresizingMaskIntoConstraints="NO" id="TQJ-5a-LCK">
+                                <rect key="frame" x="16" y="183" width="343" height="395"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MewTwo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWI-V4-xEd">
+                                <rect key="frame" x="67" y="73" width="240" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="GBr-y8-ia3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="gha-Ta-83a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TQJ-5a-LCK" secondAttribute="trailing" constant="16" id="92m-ZU-lAx"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="TQJ-5a-LCK" secondAttribute="bottom" constant="40" id="IKK-a2-ZPH"/>
+                            <constraint firstItem="gWI-V4-xEd" firstAttribute="top" secondItem="h5s-3n-0Oo" secondAttribute="top" constant="53" id="R5r-9y-vjS"/>
+                            <constraint firstItem="TQJ-5a-LCK" firstAttribute="top" secondItem="gWI-V4-xEd" secondAttribute="bottom" constant="77" id="YHF-pv-txy"/>
+                            <constraint firstItem="TQJ-5a-LCK" firstAttribute="leading" secondItem="ShD-ra-LzK" secondAttribute="leading" constant="16" id="odP-hP-TSZ"/>
+                            <constraint firstItem="gWI-V4-xEd" firstAttribute="centerX" secondItem="h5s-3n-0Oo" secondAttribute="centerX" id="vnJ-IH-a8t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h5s-3n-0Oo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MewTwo" id="LBW-wl-Nvf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myImage" destination="TQJ-5a-LCK" id="YD6-0z-2qN"/>
+                        <outlet property="myLabel" destination="gWI-V4-xEd" id="ODq-PZ-s07"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqB-47-etQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.8" y="761.46926536731644"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bulbasaur" width="900" height="660"/>
+        <image name="mewtwo" width="800" height="800"/>
+        <image name="pikachu" width="400" height="400"/>
+    </resources>
+</document>
